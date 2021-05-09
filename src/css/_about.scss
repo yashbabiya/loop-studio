@@ -1,0 +1,49 @@
+.about{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    .img{
+        width:70%;   
+        overflow: hidden;
+        min-width: 300px;
+        img{
+            width: 100%;
+        }
+    }
+    .info{
+        background-color: white;
+        padding:4em;
+        position: absolute;
+        bottom: 7em;
+        right:0vw;
+        width:50%;
+        
+        p{
+            color: $dg;
+            max-width:40ch;
+        }   
+    }
+}
+@media screen and (max-width:875px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .info{
+            h2{
+                font-size: 2rem;
+                margin: 20px 0;
+            }
+            width:100%;
+            position:revert;
+            padding:0em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    
+}

@@ -1,0 +1,41 @@
+.card{
+   
+        position: relative;
+        overflow: hidden;
+        // width: 100%;
+        flex-grow: 1;
+    h3{
+        position: absolute;
+        bottom:.8em;
+        left:.8em;
+        max-width:10ch;
+        
+    }
+    img{
+        z-index: -1;
+        width:100%;
+        
+    }
+    &::before{
+        content:'';
+        width: 100%;
+        background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(2,0,36,1) 100%);
+        opacity: 0.2;
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        overflow: hidden;
+    }
+    &:hover{
+        // cursor: pointer;
+        &::before{
+            background: none;
+            background-color: white;
+            opacity: .5;
+        }
+        h3{
+            color:black
+        }
+    }
+}
