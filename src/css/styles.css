@@ -343,7 +343,6 @@
 }
 
 .top {
-  background-image: url("./../images/desktop/image-hero.jpg");
   background-size: cover;
   width: 100%;
   position: relative;
@@ -358,6 +357,12 @@
   content: '';
   background-color: #20070b;
   opacity: 0.5;
+}
+
+.mobile {
+  width: 100%;
+  background-size: cover;
+  background: none;
 }
 
 .burger {
