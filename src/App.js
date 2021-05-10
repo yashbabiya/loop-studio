@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-// import './App.css';
 import './css/styles.css'
 import About from './About' 
 import Creation from './Creation' 
@@ -21,10 +19,9 @@ function App() {
   return(
     <div className="App">
       <div class="top" style={{backgroundImage:`url(${state})`}}>
-        {/* <div className="mobile" style={{backgroundImage:`url(${backm})`}}> */}
       <Header />
       <Home />
-      {/* </div> */}
+      
       </div>
       <About />
       <Creation />
